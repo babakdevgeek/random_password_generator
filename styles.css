@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: rgb(54, 54, 91);
+  background-color: ghostwhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid rgb(54, 54, 91);
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  gap: 1rem;
+  min-height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #fff;
+}
+h1 {
+  color: rgb(54, 54, 91);
+  text-align: center;
+  margin: 0;
+}
+a {
+  display: block;
+}
+.password-wrapper {
+  width: 100%;
+}
+.password {
+  user-select: all;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 100%;
+  word-wrap: break-word;
+  min-height: 24.8px;
+  display: block;
+  position: relative;
+  color: #8774a6;
+  font-weight: 600;
+}
+form input[type="submit"]:focus {
+  background-color: rgb(10, 10, 134);
+}
+form label:not(.length) {
+  font-size: 80%;
+  font-weight: 600;
+}
+form input[type="checkbox"] {
+  color: black;
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(54, 54, 91);
+}
+form input[type="submit"] {
+  border: none;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form .seperated {
+  display: flex;
+  /* gap: 0.5rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+.length input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+p.checker {
+  margin: 0.2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  user-select: none;
+  text-align: center;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ce9a;
+  padding: 1rem;
+  display: none;
+  opacity: 0;
+  user-select: none;
+  color: #fff;
+}
+.active ~ .popup {
+  display: block;
+  opacity: 0.7;
+}
