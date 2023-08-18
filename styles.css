@@ -48,6 +48,7 @@ a {
   position: relative;
   color: #8774a6;
   font-weight: 600;
+  cursor: copy;
 }
 form input[type="submit"]:focus {
   background-color: rgb(10, 10, 134);
